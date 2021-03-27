@@ -14,7 +14,8 @@ const fetch = require('node-fetch');
 /*---------------------------------*/
 const cargos = require("./data/cargos"); // IDs + Emojis dos cargos
 const canais = require("./data/canais"); // IDs dos canais
-// const config = require("./config.json"); // Prefix + TOKEN
+const images = require("./data/images"); // Link das imagens
+const config = require("./config.json"); // Prefix
 /*---------------------------------*/
 
 
@@ -58,5 +59,5 @@ iruka.on('ready', () => {
 /*---------------------------------------------------------*/
 
 
-/* .:: "Liga"/executa de fato o BOT / Faz login no BOT utilizando o TOKEN do config.json ::. */
+/* .:: "Liga"/executa de fato o BOT / Faz login no BOT utilizando o TOKEN ::. */
 iruka.login(process.env.TOKEN);
