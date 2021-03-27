@@ -15,7 +15,7 @@ module.exports = {
       message.channel.bulkDelete(results).then((messages) => {
         const sucessoEmbed = new Discord.MessageEmbed()
         .setTitle('Sucesso!')
-        .setThumbnail("../../images/renders/chibi_anko.png")
+        .setThumbnail('https://raw.githubusercontent.com/GuilhermeEsdras/coding-ninjas-bot/main/images/renders/chibi_anko.png')
         .setDescription(`✅ Limpei com sucesso *${messages.size}* mensagens deste canal. \n *Essa mensagem também será apagada em ${segs} segundos...*`)
         message.reply('então...', sucessoEmbed).then(msg => {
           msg.delete({ timeout: segundos })
