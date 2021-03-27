@@ -61,3 +61,6 @@ iruka.on('ready', () => {
 
 /* .:: "Liga"/executa de fato o BOT / Faz login no BOT utilizando o TOKEN ::. */
 iruka.login(process.env.TOKEN);
+
+// const tempTOKEN = require("./tempTOKEN")
+// iruka.login(tempTOKEN.TOKEN)
